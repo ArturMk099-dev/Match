@@ -60,6 +60,13 @@ img {
   align-items: center;
   font-family: "Press Start 2P", "Courier New", monospace;
 }
+.mobile {
+  display: none !important;
+}
+.desktop {
+  display: block !important;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .row {
     padding: 0 10px !important;
