@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nkarner {
+  display: flex;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  gap: 50px;
+}
+.nkar {
+  width: 390px;
+  height: 390px;
+  border: 5px solid limegreen;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.nkar2 {
+  width: 390px;
+  height: 390px;
+  border: 5px solid limegreen;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  border: 1px solid green;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: opacity 0.5s;
+  transition: all 0.3s linear;
+}
+img {
+  vertical-align: top;
+  width: 125px;
+  height: 125px;
+  object-fit: cover;
+  transition: transform 0.6s;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+.card.open img {
+  transform: rotateY(0deg);
+}
+.card:hover {
+  background-color: rgba(0, 128, 0, 0.47);
+}
+.syochik {
+  color: black;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Press Start 2P", "Courier New", monospace;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .row {
+    padding: 0 10px !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .mobile {
+    display: block !important;
+  }
+  .desktop {
+    display: none !important;
+  }
+  .col {
+    width: 100%;
+  }
+  .nkarner {
+    position: static;
+    gap: 5px;
+  }
+  .nkar {
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    border: 2px solid limegreen;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .nkar2 {
+    width: 100%;
+    height: 300px;
+    border: 2px solid limegreen;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    border: 1px solid green;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: opacity 0.5s;
+    transition: all 0.3s linear;
+  }
+  img {
+    vertical-align: top;
+    width: 100px;
+    height: 97px;
+    object-fit: cover;
+    transition: transform 0.6s;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    border-radius: 15px;
+  }
+  .syochik {
+    font-size: 30px;
+  }
+}
