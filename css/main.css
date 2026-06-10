@@ -82,13 +82,16 @@ img {
   .col {
     width: 100%;
   }
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
   .nkarner {
     position: static;
     gap: 5px;
   }
   .nkar {
     margin-top: 20px;
-    width: 100%;
+    width: 310px;
     height: 300px;
     border: 2px solid limegreen;
     display: flex;
@@ -97,7 +100,7 @@ img {
     align-items: center;
   }
   .nkar2 {
-    width: 100%;
+    width: 310px;
     height: 300px;
     border: 2px solid limegreen;
     display: flex;
@@ -124,5 +127,8 @@ img {
   }
   .syochik {
     font-size: 30px;
+  }
+  .card:hover {
+    background-color: transparent;
   }
 }
